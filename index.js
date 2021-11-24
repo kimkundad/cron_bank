@@ -5,7 +5,7 @@ const crypto = require("crypto");
 
 
 var cron = require('node-cron');
-cron.schedule('*/1 * * * *', function(){
+cron.schedule('*/5 * * * *', function(){
    console.log('running a task every two minutes');
 
    var n = crypto.randomInt(0, 1000000);
@@ -21,7 +21,6 @@ cron.schedule('*/1 * * * *', function(){
         }
     });
 });
-
 
 
 });
